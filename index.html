@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy policy for Image Edit, an offline Android photo editor. The app collects no data and has no internet permission.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Image Edit — Privacy Policy">
+<meta property="og:description" content="Image Edit collects no data. It has no internet permission, so it cannot send your photos anywhere.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B0D1A'/><rect x='6' y='9' width='17' height='14' rx='3.5' fill='none' stroke='%23fff' stroke-width='2'/><circle cx='16' cy='14' r='2' fill='%23FFC46B'/><path d='M7 20l4.5-5 3 3 4-4.5 4 5' fill='none' stroke='%238FD8FF' stroke-width='2' stroke-linejoin='round'/></svg>">
+<title>Image Edit Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+  html { background: #FBFBFD; }
+  @media (prefers-color-scheme: dark) { html { background: #0B0D1A; } }
+
+  :root {
+    color-scheme: light;
+
+    --ink:        #0B0D1A;
+    --ink-soft:   #3A405C;
+    --ink-faint:  #6B7191;
+    --rule:       #E2E4EF;
+    --rule-soft:  #EEF0F7;
+    --page:       #FBFBFD;
+    --card:       #FFFFFF;
+    --accent:     #2F6BFF;
+    --magenta:    #D8348A;
+    --cyan:       #0E9CB8;
+    --seal-bg:    #F2F5FF;
+    --seal-rule:  #C9D6FF;
+    --mono-bg:    #F4F5FA;
+
+    --measure: 66ch;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ink:        #ECEEF8;
+      --ink-soft:   #B3B9D4;
+      --ink-faint:  #858BAB;
+      --rule:       #262A45;
+      --rule-soft:  #1C2038;
+      --page:       #0B0D1A;
+      --card:       #12152A;
+      --accent:     #7CA0FF;
+      --magenta:    #FF7AB8;
+      --cyan:       #45D3EC;
+      --seal-bg:    #131938;
+      --seal-rule:  #2C3A72;
+      --mono-bg:    #171B33;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ink:        #ECEEF8;
+    --ink-soft:   #B3B9D4;
+    --ink-faint:  #858BAB;
+    --rule:       #262A45;
+    --rule-soft:  #1C2038;
+    --page:       #0B0D1A;
+    --card:       #12152A;
+    --accent:     #7CA0FF;
+    --magenta:    #FF7AB8;
+    --cyan:       #45D3EC;
+    --seal-bg:    #131938;
+    --seal-rule:  #2C3A72;
+    --mono-bg:    #171B33;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 0 72px;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding-block: 44px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .mark {
+    width: 62px;
+    height: 62px;
+    border-radius: 15px;
+    flex: none;
+    background:
+      radial-gradient(120% 120% at 12% 8%, var(--cyan) 0%, transparent 46%),
+      radial-gradient(120% 120% at 92% 92%, var(--magenta) 0%, transparent 52%),
+      linear-gradient(140deg, #1B2A6B 0%, #0B0D1A 58%, #4A1668 100%);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 6px 20px rgba(20, 24, 60, .28);
+  }
+
+  .mark svg { width: 34px; height: 34px; display: block; }
+
+  .masthead-text { min-width: 0; }
+
+  .app-name {
+    font-family: Archivo, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  .doc-kind {
+    font-family: Archivo, system-ui, sans-serif;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 3px 0 0;
+  }
+
+  h1 {
+    font-family: Archivo, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -0.028em;
+    text-wrap: balance;
+    margin: 40px 0 0;
+    max-width: 16ch;
+  }
+
+  .stamp {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .78rem;
+    color: var(--ink-faint);
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+  }
+
+  /* ---------- the claim ---------- */
+
+  .seal {
+    margin-top: 34px;
+    background: var(--seal-bg);
+    border: 1px solid var(--seal-rule);
+    border-radius: 14px;
+    padding: 24px 24px 20px;
+  }
+
+  .seal p {
+    margin: 0;
+    font-size: 1.12rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+
+  .seal p + p { margin-top: 12px; font-size: 1rem; color: var(--ink-soft); }
+
+  .seal strong { font-weight: 600; }
+
+  .manifest {
+    margin-top: 18px;
+    background: var(--mono-bg);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .78rem;
+    line-height: 1.85;
+    color: var(--ink-soft);
+    overflow-x: auto;
+  }
+
+  .manifest .absent { color: var(--ink-faint); text-decoration: line-through; }
+  .manifest .present { color: var(--ink); }
+  .manifest .note { color: var(--ink-faint); }
+
+  /* ---------- sections ---------- */
+
+  section { margin-top: 46px; max-width: var(--measure); }
+
+  h2 {
+    font-family: Archivo, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1.28rem;
+    letter-spacing: -0.014em;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  p { margin: 0 0 15px; }
+  p:last-child { margin-bottom: 0; }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  ul { margin: 0 0 15px; padding-left: 1.15em; }
+  li { margin-bottom: 7px; }
+  li::marker { color: var(--ink-faint); }
+
+  code {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .84em;
+    background: var(--mono-bg);
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: var(--ink);
+  }
+
+  /* ---------- permissions table ---------- */
+
+  .table-scroll { overflow-x: auto; margin-bottom: 15px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Archivo, system-ui, sans-serif;
+    font-size: .88rem;
+    min-width: 460px;
+  }
+
+  th {
+    text-align: left;
+    font-weight: 600;
+    font-size: .7rem;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  td {
+    padding: 13px 14px 13px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: top;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  td:first-child {
+    color: var(--ink);
+    font-weight: 500;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+
+  /* ---------- verify ---------- */
+
+  .verify {
+    margin-top: 18px;
+    border-left: 3px solid var(--cyan);
+    padding: 4px 0 4px 18px;
+  }
+
+  .verify h3 {
+    font-family: Archivo, system-ui, sans-serif;
+    font-size: .74rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin: 0 0 8px;
+  }
+
+  .verify p { font-size: .96rem; color: var(--ink-soft); }
+
+  .steps {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .8rem;
+    color: var(--ink);
+    line-height: 1.9;
+  }
+
+  /* ---------- contact ---------- */
+
+  .contact-box {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 20px 22px;
+  }
+
+  .contact-label {
+    font-family: Archivo, system-ui, sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 6px;
+  }
+
+  .contact-value {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .95rem;
+    color: var(--ink);
+    word-break: break-all;
+  }
+
+  .placeholder {
+    color: var(--magenta);
+    border-bottom: 1.5px dashed var(--magenta);
+    padding-bottom: 1px;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    font-family: Archivo, system-ui, sans-serif;
+    font-size: .82rem;
+    color: var(--ink-faint);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+  }
+
+  @media (max-width: 460px) {
+    body { font-size: 16px; }
+    .masthead { padding-block: 32px 22px; }
+    section { margin-top: 38px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none">
+        <rect x="6" y="10" width="23" height="19" rx="4.5" stroke="#fff" stroke-width="2.4"/>
+        <path d="M8 26l6-6.5 4 4 5-6 5 6.5" stroke="#8FD8FF" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="21" cy="17" r="2.6" fill="#FFC46B"/>
+        <path d="M27 30l7-7" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        <path d="M32 7l1.5 4L37.5 12.5 33.5 14 32 18l-1.5-4L26.5 12.5 30.5 11z" fill="#FFD66B"/>
+      </svg>
+    </div>
+    <div class="masthead-text">
+      <p class="app-name">Image Edit</p>
+      <p class="doc-kind">com.image.edit &middot; Android</p>
+    </div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+
+  <p class="stamp">
+    <span>Last updated: 25 September 2026</span>
+    <span>Version 1.0.0</span>
+  </p>
+
+  <div class="seal">
+    <p><strong>Image Edit does not collect, transmit, sell or share any of your data.</strong></p>
+    <p>This is not a policy commitment that someone has to remember to keep. The app
+      does not request permission to use the internet, so Android will not let it
+      open a network connection at all. It cannot send your photos anywhere, and it
+      works normally in airplane mode.</p>
+
+    <div class="manifest" role="img"
+         aria-label="The app requests three permissions: camera, write external storage on Android 9 and older, and vibrate. It does not request internet or network state permissions.">
+      <div class="note"># permissions requested by the published app</div>
+      <div class="present">android.permission.CAMERA</div>
+      <div class="present">android.permission.WRITE_EXTERNAL_STORAGE <span class="note">maxSdkVersion=28</span></div>
+      <div class="present">android.permission.VIBRATE</div>
+      <div class="absent">android.permission.INTERNET</div>
+      <div class="absent">android.permission.ACCESS_NETWORK_STATE</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>What the app does with your images</h2>
+    <p>Every operation runs on your device using your device's own processor:
+      editing, filters, retouching, scanning, text recognition and PDF creation.
+      Nothing is sent anywhere for processing.</p>
+    <p>Your original files are never modified. When you save a project, the app makes
+      its own private copy to work from and leaves your file untouched.</p>
+  </section>
+
+  <section>
+    <h2>What is stored, and where</h2>
+    <p>The following is kept in the app's private storage on your device, which other
+      apps cannot read:</p>
+    <ul>
+      <li>Projects you save, including a private copy of the source image</li>
+      <li>Signatures and custom stickers you create</li>
+      <li>Export presets you save</li>
+      <li>Thumbnails of recently opened images</li>
+      <li>Your settings, such as theme and export defaults</li>
+    </ul>
+    <p>Uninstalling the app removes all of it. You can clear temporary files at any
+      time in <strong>Settings &rarr; Storage</strong> inside the app.</p>
+    <p>Images you export are saved where you choose: your gallery, a folder you pick,
+      or an app you share to. Once exported, they are handled by Android and by
+      whichever app you sent them to.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Permission</th>
+            <th scope="col">Why</th>
+            <th scope="col">When it is asked for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CAMERA</td>
+            <td>To photograph documents in the scanner</td>
+            <td>Only when you open the scanner</td>
+          </tr>
+          <tr>
+            <td>VIBRATE</td>
+            <td>Haptic feedback on sliders and controls</td>
+            <td>Never prompted</td>
+          </tr>
+          <tr>
+            <td>WRITE_EXTERNAL_STORAGE</td>
+            <td>To save an exported image to your gallery on Android 9 and older</td>
+            <td>Only on those older versions</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The app deliberately does <strong>not</strong> request access to your photo
+      library. It uses Android's own photo picker instead, which shows the app only
+      the specific images you select.</p>
+
+    <div class="verify">
+      <h3>Check it yourself</h3>
+      <p>You do not have to take any of this on trust. On your phone:</p>
+      <p class="steps">Settings &rarr; Apps &rarr; Image Edit &rarr; Permissions</p>
+      <p>There is no network or internet entry, because the app never asked for one.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Text recognition</h2>
+    <p>The <em>Extract text</em> feature uses Google's ML Kit text recognition with the
+      model bundled inside the app. Recognition happens on your device. No image or
+      recognised text is sent to Google or to anyone else. Because the app has no
+      internet permission, no such transmission is possible.</p>
+  </section>
+
+  <section>
+    <h2>Analytics, advertising and tracking</h2>
+    <p>There are none. The app contains no analytics library, no advertising library,
+      no crash reporting service and no tracking identifiers. There is no account and
+      no sign-in.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>The app is safe for all ages. It collects no data from anyone, including
+      children, and has no social or content-sharing features beyond Android's own
+      share sheet.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published at this address
+      and the date at the top will change.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p class="contact-label">Questions about this policy</p>
+      <p class="contact-value"><span class="placeholder">your-email@example.com</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Image Edit</span>
+    <span>com.image.edit</span>
+    <span>Effective 25 September 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
